@@ -1,0 +1,9 @@
+<!--component html goes here -->
+{{fName}}<br><!--  one way binding -->
+{{lName}}<br/><br/>
+
+<input type='text' [value]=fName (keyup.control.1)="fName= $event.target.value"/>
+
+<input type='text' [(ngModel)]='lName'/>
+
+Your last name is : {{lName}}
